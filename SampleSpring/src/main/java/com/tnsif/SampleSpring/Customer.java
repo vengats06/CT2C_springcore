@@ -1,6 +1,7 @@
 package com.tnsif.SampleSpring;
 
 public class Customer {
+	
 	private int id;
 	private String name;
 	private String city;
@@ -38,8 +39,10 @@ public class Customer {
 	public void setS1(Shopping s1) {
 		this.s1 = s1;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", city=" + city + ", s1=" + s1 + "]";
+	}
 
 }
